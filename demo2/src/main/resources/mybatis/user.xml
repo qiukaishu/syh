@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为映射的地址，也就是只有在这个接口中才能使用下边的内容-->
+<mapper namespace="com.example.demo2.demos.mapper.UserMapper">
+    <!-- id 外部为调用的名字 resultType-->
+    <select id="selectAll" resultType="com.example.demo2.demos.entity.User">
+        select * from `user`
+    </select>
+</mapper>
